@@ -1,0 +1,299 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Language" content="zh-cn">
+
+    <title>IMPROVING  END-TO-END SPEECH SYNTHESIS WITH LOCAL RECURRENT NEURAL NETWORK ENHANCED TRANSFORMER
+</title>
+</head>
+<body>
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+    gtag('config', 'UA-125850295-1');
+</script>
+
+<article>
+    <header>
+        <h1>IMPROVING  END-TO-END SPEECH SYNTHESIS WITH LOCAL RECURRENT NEURAL NETWORK ENHANCED TRANSFORMER</h1>
+    </header>
+</article>
+<div><b>Authors:</b> Yibin Zheng, Xinhui Li, Fenglong Xie, Lv Lu</a> (Submitted to ICASSP 2020</a>)</div>
+
+<div><b>Abstract:</b> Although Transformer based neural end-to-end TTS model has demonstrated extreme effectiveness in capturing long-term dependencies and achieved state-of-the-art performance, it still suffers from two problems. 1)  limited ability to model sequential and local structures in sequences; 2) heavily rely on position embeddings that have limited effect but require an amount of design efforts. In this paper, we introduce local recurrent neural network (Local-RNN) into Transformer to make full use of the advantages of both RNN and Transformer while mitigating their drawbacks. The sequential and local structures could be effectively modeled by Local-RNN, while the long-term dependencies could be captured by Transformer without any use of position embeddings. Subjective evaluation results show our proposed model outperforms baseline (Transformer) with a gap of 0.12 in MOS and achieves close to human quality (4.34 vs. 4.45 in MOS) on general test. Case level intelligibility test also show an absolute improvement of 7.5\% than the baseline on a challenging test.
+</div>
+
+</div>
+    <h3>Recording samples</h3>
+
+        “一日三餐，都是姐姐精心准备送到门口。(yi2ri4*san1can1$dou1shi4*jie3jie5*jing1xin1*zhun3bei4#song4dao4*men2kou3)”
+        <table><tbody><tr>
+            <td>Recording:</td>
+            <td>
+                <audio controls="">
+                    <source src="Recording1.wav">
+                </audio>
+            </td>
+        </tr>
+        <table><tbody><tr>
+
+        “上述两被告人，每月领取固定报酬。(shang4shu4*liang3*bei4gao4ren2$mei3yve4*ling6qv3*gu4ding4*bao4chou5)”
+        <table><tbody><tr>
+            <td>Recording:</td>
+            <td>
+                <audio controls="">
+                    <source src="Recording2.wav">
+                </audio>
+            </td>
+        </tr>
+    </tbody></table>
+
+</div>
+<h3>Subjective test samples from different end-to-end TTS models</h3>
+
+    “令霍雨浩已经有些认不出他来了。(ling4*huo4yv3hao4$yi3jing1*you3xie1*ren4bu4chu1*ta1*lai2le5)”
+    <table><tbody><tr>
+        <td>Tacotron2:</td>
+        <td>
+            <audio controls="">
+                <source src="Samples/N/1.wav">
+            </audio>
+        </td>
+        <td>:</td>
+        <td>
+            <audio controls="">
+                <source src="Samples/R/1.wav">
+            </audio>
+        </td>
+        <td>:</td>
+        <td>
+            <audio controls="">
+                <source src="Samples/RT/1.wav">
+            </audio>
+        </td>
+      </tr>
+      <table><tbody><tr>
+
+      “不不，你一个人肯定是解决不了的。(bu4bu4$ni3*yi2ge4ren2#ken3ding4*shi4*jie3jve2*bu4liao3de5)”
+      <table><tbody><tr>
+          <td>Tacotron2:</td>
+          <td>
+              <audio controls="">
+                  <source src="Samples/N/2.wav">
+              </audio>
+          </td>
+          <td>:</td>
+          <td>
+              <audio controls="">
+                  <source src="Samples/R/2.wav">
+              </audio>
+          </td>
+          <td>:</td>
+          <td>
+              <audio controls="">
+                  <source src="Samples/RT/2.wav">
+              </audio>
+          </td>
+        </tr>
+        <table><tbody><tr>
+
+        “我想，与其拙劣地进行加工或添写。(wo2xiang3$yv3qi2*zhuo1lie4de5*jin4xing2*jia1gong1*huo4tian1*xie3)”
+        <table><tbody><tr>
+            <td>Tacotron2:</td>
+            <td>
+                <audio controls="">
+                    <source src="Samples/N/3.wav">
+                </audio>
+            </td>
+            <td>:</td>
+            <td>
+                <audio controls="">
+                    <source src="Samples/R/3.wav">
+                </audio>
+            </td>
+            <td>:</td>
+            <td>
+                <audio controls="">
+                    <source src="Samples/RT/3.wav">
+                </audio>
+            </td>
+          </tr>
+          <table><tbody><tr>
+
+
+          “瞧你，那声音明显是在哭呢。(qiao2ni3$na4*sheng1yin1*ming2xian3*shi4zai4*ku1ne5)”
+          <table><tbody><tr>
+              <td>Tacotron2:</td>
+              <td>
+                  <audio controls="">
+                      <source src="Samples/N/4.wav">
+                  </audio>
+              </td>
+              <td>:</td>
+              <td>
+                  <audio controls="">
+                      <source src="Samples/R/4.wav">
+                  </audio>
+              </td>
+              <td>:</td>
+              <td>
+                  <audio controls="">
+                      <source src="Samples/RT/4.wav">
+                  </audio>
+              </td>
+            </tr>
+            <table><tbody><tr>
+
+        “那血红色的战刀一眼看去足有一米五长。(na4*xve4hong2se4de5*zhan4dao1*yi4yan3$kan4qv4*zu2you3*yi4mi3*wu3chang2)”
+        <table><tbody><tr>
+            <td>Tacotron2:</td>
+            <td>
+                <audio controls="">
+                    <source src="Samples/N/5.wav">
+                </audio>
+            </td>
+            <td>:</td>
+            <td>
+                <audio controls="">
+                    <source src="Samples/R/5.wav">
+                </audio>
+            </td>
+            <td>:</td>
+            <td>
+                <audio controls="">
+                    <source src="Samples/RT/5.wav">
+                </audio>
+            </td>
+          </tr>
+          <table><tbody><tr>
+
+          “那天的事情他还记得清楚呀！(nei4tian1de5*shi4qing5$ta1hai2*ji4de5*qing1chu3ya5)”
+          <table><tbody><tr>
+              <td>Tacotron2:</td>
+              <td>
+                  <audio controls="">
+                      <source src="Samples/N/6.wav">
+                  </audio>
+              </td>
+              <td>:</td>
+              <td>
+                  <audio controls="">
+                      <source src="Samples/R/6.wav">
+                  </audio>
+              </td>
+              <td>:</td>
+              <td>
+                  <audio controls="">
+                      <source src="Samples/RT/6.wav">
+                  </audio>
+              </td>
+            </tr>
+            <table><tbody><tr>
+
+            “仪式之后，众人一起吃了顿好的庆祝一番。(yi2shi4*zhi1hou4$zhong4ren2*yi4qi3*chi1le5dun4*hao3de5$qing4zhu4*yi4fan1)”
+            <table><tbody><tr>
+                <td>Tacotron2:</td>
+                <td>
+                    <audio controls="">
+                        <source src="Samples/N/7.wav">
+                    </audio>
+                </td>
+                <td>:</td>
+                <td>
+                    <audio controls="">
+                        <source src="Samples/R/7.wav">
+                    </audio>
+                </td>
+                <td>:</td>
+                <td>
+                    <audio controls="">
+                        <source src="Samples/RT/7.wav">
+                    </audio>
+                </td>
+              </tr>
+              <table><tbody><tr>
+
+
+              “代表着内院的血红色。”
+              <table><tbody><tr>
+                  <td>Tacotron2:</td>
+                  <td>
+                      <audio controls="">
+                          <source src="Samples/N/8.wav">
+                      </audio>
+                  </td>
+                  <td>:</td>
+                  <td>
+                      <audio controls="">
+                          <source src="Samples/R/8.wav">
+                      </audio>
+                  </td>
+                  <td>:</td>
+                  <td>
+                      <audio controls="">
+                          <source src="Samples/RT/8.wav">
+                      </audio>
+                  </td>
+                </tr>
+                <table><tbody><tr>
+        </tr>
+        “贝贝指着广场另一侧的教学楼道。(bei4bei5*zhi3zhe5*guang6chang3*ling4yi2ce4de5*jiao4xve2lou2*dao4)”
+        <table><tbody><tr>
+            <td>Tacotron2:</td>
+            <td>
+                <audio controls="">
+                    <source src="Samples/N/9.wav">
+                </audio>
+            </td>
+            <td>:</td>
+            <td>
+                <audio controls="">
+                    <source src="Samples/R/9.wav">
+                </audio>
+            </td>
+            <td>:</td>
+            <td>
+                <audio controls="">
+                    <source src="Samples/RT/9.wav">
+                </audio>
+            </td>
+          </tr>
+          <table><tbody><tr>
+
+      “下意识地后退一步，霍雨浩脸上满是吃惊之色。(xia4yi4shi5de5*hou4tui4*yi2bu4$huo4yv3hao4*lian3shang4$man3shi4*chi1jing1*zhi1se4)”
+      <table><tbody><tr>
+          <td>Tacotron2:</td>
+          <td>
+              <audio controls="">
+                  <source src="Samples/N/10.wav">
+              </audio>
+          </td>
+          <td>:</td>
+          <td>
+              <audio controls="">
+                  <source src="Samples/R/10.wav">
+              </audio>
+          </td>
+          <td>:</td>
+          <td>
+              <audio controls="">
+                  <source src="Samples/RT/10.wav">
+              </audio>
+          </td>
+        </tr>
+        <table><tbody><tr>
+
+</tbody></table>
+</div>
+
+
+
+
+
+
+
+
+</body></html>
