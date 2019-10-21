@@ -23,13 +23,13 @@
 </article>
 <div><b>Authors:</b> Yibin Zheng, Xinhui Li, Fenglong Xie, Li Lu</a> (Submitted to ICASSP 2020</a>)</div>
 
-<div><b>Abstract:</b> Although Transformer based neural end-to-end TTS model has demonstrated extreme effectiveness in capturing long-term dependencies and achieved state-of-the-art performance, it still suffers from two problems. 1)  limited ability to model sequential and local structures in sequences; 2) heavily rely on position embeddings that have limited effect but require an amount of design efforts. In this paper, we introduce local recurrent neural network (Local-RNN) into Transformer to make full use of the advantages of both RNN and Transformer while mitigating their drawbacks. The sequential and local structures could be effectively modeled by Local-RNN, while the long-term dependencies could be captured by Transformer without any use of position embeddings. Subjective evaluation results show our proposed model outperforms baseline (Transformer) with a gap of 0.12 in MOS and achieves close to human quality (4.34 vs. 4.45 in MOS) on general test. Case level intelligibility test also show an absolute improvement of 7.5\% than the baseline on a challenging test.
+<div><b>Abstract:</b> Although Transformer based neural end-to-end TTS model has demonstrated extreme effectiveness in capturing long-term dependencies and achieved state-of-the-art performance, it still suffers from two problems. 1)  limited ability to model sequential and local structures in sequences; 2) heavily rely on position embeddings that have limited effect but require an amount of design efforts. In this paper, we introduce local recurrent neural network (Local-RNN) into Transformer to make full use of the advantages of both RNN and Transformer while mitigating their drawbacks. The sequential and local structures could be effectively modeled by Local-RNN, while the long-term dependencies could be captured by Transformer without any use of position embeddings. Subjective evaluation results show our proposed model outperforms baseline (Transformer) with a gap of 0.12 in MOS and achieves close to human quality (4.34 vs. 4.45 in MOS) on general test. Case level intelligibility test also show an absolute improvement of 6.5\% than the baseline on a challenging test.
 </div>
 
 </div>
     <h3>Recording samples</h3>
 
-        “一日三餐，都是姐姐精心准备送到门口。(yi2ri4*san1can1$dou1shi4*jie3jie5*jing1xin1*zhun3bei4#song4dao4*men2kou3)”
+        “一日三餐，都是姐姐精心准备送到门口。(yi2 ri4 san1 can1 , dou1 shi4 jie3 jie5 jing1 xin1 zhun3 bei4 song4 dao4 men2 kou3 .)”
         <table><tbody><tr>
             <td>Recording:</td>
             <td>
@@ -40,7 +40,7 @@
         </tr>
         <table><tbody><tr>
 
-        “上述两被告人，每月领取固定报酬。(shang4shu4*liang3*bei4gao4ren2$mei3yve4*ling6qv3*gu4ding4*bao4chou5)”
+        “上述两被告人，每月领取固定报酬。(shang4 shu4 liang3 bei4 gao4 ren2 , mei3 yve4 ling6 qv3 gu4 ding4 bao4 chou5 .)”
         <table><tbody><tr>
             <td>Recording:</td>
             <td>
@@ -54,7 +54,7 @@
 </div>
 <h3>Subjective test samples from different end-to-end TTS models</h3>
 
-    “令霍雨浩已经有些认不出他来了。(ling4*huo4yv3hao4$yi3jing1*you3xie1*ren4bu4chu1*ta1*lai2le5)”
+    “令霍雨浩已经有些认不出他来了。(ling4 huo4 yv3 hao4 yi3 jing1 you3 xie1 ren4 bu4 chu1 ta1 lai2 le5 .)”
     <table><tbody><tr>
         <td>Tacotron2:</td>
         <td>
@@ -77,7 +77,7 @@
       </tr>
       <table><tbody><tr>
 
-      “不不，你一个人肯定是解决不了的。(bu4bu4$ni3*yi2ge4ren2#ken3ding4*shi4*jie3jve2*bu4liao3de5)”
+      “不不，你一个人肯定是解决不了的。(bu4 bu4 , ni3 yi2 ge4 ren2 ken3 ding4 shi4 jie3 jve2 bu4 liao3 de5 .)”
       <table><tbody><tr>
           <td>Tacotron2:</td>
           <td>
@@ -100,7 +100,7 @@
         </tr>
         <table><tbody><tr>
 
-        “我想，与其拙劣地进行加工或添写。(wo2xiang3$yv3qi2*zhuo1lie4de5*jin4xing2*jia1gong1*huo4tian1*xie3)”
+        “我想，与其拙劣地进行加工或添写。(wo2 xiang3 , yv3 qi2 zhuo1 lie4 de5 jin4 xing2 jia1 gong1 huo4 tian1 xie3 .)”
         <table><tbody><tr>
             <td>Tacotron2:</td>
             <td>
@@ -124,7 +124,7 @@
           <table><tbody><tr>
 
 
-          “瞧你，那声音明显是在哭呢。(qiao2ni3$na4*sheng1yin1*ming2xian3*shi4zai4*ku1ne5)”
+          “瞧你，那声音明显是在哭呢。(qiao2 ni3 , na4 sheng1 yin1 ming2 xian3 shi4 zai4 ku1 ne5 .)”
           <table><tbody><tr>
               <td>Tacotron2:</td>
               <td>
@@ -147,7 +147,7 @@
             </tr>
             <table><tbody><tr>
 
-        “那血红色的战刀一眼看去足有一米五长。(na4*xve4hong2se4de5*zhan4dao1*yi4yan3$kan4qv4*zu2you3*yi4mi3*wu3chang2)”
+        “那血红色的战刀一眼看去足有一米五长。(na4 xve4 hong2 se4 de5 zhan4 dao1 yi4 yan3 kan4 qv4 zu2 you3 yi4 mi3 wu3 chang2 .)”
         <table><tbody><tr>
             <td>Tacotron2:</td>
             <td>
@@ -170,7 +170,7 @@
           </tr>
           <table><tbody><tr>
 
-          “那天的事情他还记得清楚呀！(nei4tian1de5*shi4qing5$ta1hai2*ji4de5*qing1chu3ya5)”
+          “那天的事情他还记得清楚呀！(nei4 tian1 de5 shi4 qing5 ta1 hai2 ji4 de5 qing1 chu3 ya5 !)”
           <table><tbody><tr>
               <td>Tacotron2:</td>
               <td>
@@ -193,7 +193,7 @@
             </tr>
             <table><tbody><tr>
 
-            “仪式之后，众人一起吃了顿好的庆祝一番。(yi2shi4*zhi1hou4$zhong4ren2*yi4qi3*chi1le5dun4*hao3de5$qing4zhu4*yi4fan1)”
+            “仪式之后，众人一起吃了顿好的庆祝一番。(yi2 shi4 zhi1 hou4 , zhong4 ren2 yi4 qi3 chi1 le5 dun4 hao3 de5 qing4 zhu4 yi4 fan1 .)”
             <table><tbody><tr>
                 <td>Tacotron2:</td>
                 <td>
@@ -217,7 +217,7 @@
               <table><tbody><tr>
 
 
-              “代表着内院的血红色。”
+              “代表着内院的血红色。(dai4 biao3 zhe5 nei4 yvan4 de5 xve4 hong2 se4 .)”
               <table><tbody><tr>
                   <td>Tacotron2:</td>
                   <td>
@@ -240,7 +240,7 @@
                 </tr>
                 <table><tbody><tr>
         </tr>
-        “贝贝指着广场另一侧的教学楼道。(bei4bei5*zhi3zhe5*guang6chang3*ling4yi2ce4de5*jiao4xve2lou2*dao4)”
+        “贝贝指着广场另一侧的教学楼道。(bei4 bei5 zhi3 zhe5 guang6 chang3 ling4 yi2 ce4 de5 jiao4 xve2 lou2 dao4 .)”
         <table><tbody><tr>
             <td>Tacotron2:</td>
             <td>
@@ -263,7 +263,7 @@
           </tr>
           <table><tbody><tr>
 
-      “下意识地后退一步，霍雨浩脸上满是吃惊之色。(xia4yi4shi5de5*hou4tui4*yi2bu4$huo4yv3hao4*lian3shang4$man3shi4*chi1jing1*zhi1se4)”
+      “下意识地后退一步，霍雨浩脸上满是吃惊之色。(xia4 yi4 shi5 de5 hou4 tui4 yi2 bu4 , huo4 yv3 hao4 lian3 shang4 man3 shi4 chi1 jing1 zhi1 se4 .)”
       <table><tbody><tr>
           <td>Tacotron2:</td>
           <td>
